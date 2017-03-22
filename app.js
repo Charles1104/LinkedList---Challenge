@@ -22,7 +22,9 @@ save.addEventListener("click", function(){
 jump.addEventListener("click", function(){
 
   for (var i = 0; i < increment; i++){
-    display.innerHTML += " " + saveJump.get(i).value ;
+    display.innerHTML += "<li>" + saveJump.get(i).value + "</li>";
   }
+
+  display.innerHTML = "<ol type=\"1\">" + display.innerHTML + "</ol>";
 
 });
